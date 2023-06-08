@@ -1,6 +1,25 @@
 # Jungle
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 6.1. Updated to include various improvements aimed at enhancing the user experience, such as bug fixes, modifications to the user interface, and the addition of new features.
+
+- Bug fixes:
+  - Money formatting: Implemented a consistent money formatting system across the entire website.
+  - Missing administrator security: Implemented a requirement for admins to provide their username and password when accessing admin-specific pages.
+
+- UI changes:
+  - Empty cart message: Instead of displaying cart details with empty data, now shows a message along with a link to the home page.
+  - "Sold Out" badge: Added a badge indicating that items with no inventory are sold out.
+  - Order details display: After a successful order placement, now displays the relevant details of the order.
+
+- Features:
+  - Admin dashboard: Introduced a new dashboard that provides an overview of the number of products and categories.
+  - About page: Added an About page, which can be populated with information about the company.
+  - Category creation: Implemented a new page for administrators to create new categories.
+  - User login and registration support: Introduced new database tables and pages to support user login and registration. Passwords are now properly hashed using bcrypt, emails must be unique (case-insensitive), and error messages are displayed on the login/signup pages.
+
+- Tests:
+  - RSpec tests: Implemented tests using RSpec for product and user models.
+  - Cypress tests: Introduced Cypress tests for the home page, product details, add to cart functionality, and user login/signup process.
 
 ## Setup
 
